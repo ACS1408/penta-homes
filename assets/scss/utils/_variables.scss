@@ -92,17 +92,6 @@ $enable-negative-margins: false !default;
 $enable-deprecation-messages: true !default;
 $enable-important-utilities: true !default;
 
-// spacings
-$spacer: 1rem !default;
-$spacers: (
-    0: 0,
-    1: $spacer * 0.25,
-    2: $spacer * 0.5,
-    3: $spacer,
-    4: $spacer * 1.5,
-    5: $spacer * 3
-) !default;
-
 // headings
 $h-sizes: (
     1: (
@@ -130,31 +119,14 @@ $h-sizes: (
 );
 
 $ttl-sizes: (
-    180: (
-        null: 83,
-        992: 140,
-        1600: 180
-    ),
-    90: (
-        null: 30,
-        576: 35,
-        768: 45,
-        992: 55,
-        1200: 75,
-        1600: 90
-    ),
     80: (
         null: 42,
-        376: 50,
-        1200: 70,
+        992: 60,
         1600: 80
     ),
     70: (
         null: 32,
-        375: 37,
-        576: 35,
         992: 45,
-        1200: 62,
         1600: 70
     ),
     60: (
@@ -164,10 +136,6 @@ $ttl-sizes: (
     50: (
         null: 40,
         992: 50
-    ),
-    36: (
-        null: 24,
-        992: 36
     ),
     30: (
         null: 20,
@@ -193,26 +161,6 @@ $p-sizes: (
     20: (
         null: 16,
         992: 20
-    ),
-    24: (
-        null: 22,
-        992: 24
-    ),
-    26: (
-        null: 18,
-        992: 26
-    ),
-    28: (
-        null: 24,
-        1600: 28
-    ),
-    34: (
-        null: 22,
-        1200: 34
-    ),
-    40: (
-        null: 30,
-        1200: 40
     )
 );
 

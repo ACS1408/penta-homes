@@ -49,15 +49,15 @@
 // @import "../../node_modules/bootstrap/scss/alert";
 // @import "../../node_modules/bootstrap/scss/progress";
 // @import "../../node_modules/bootstrap/scss/list-group";
-@import "../../node_modules/bootstrap/scss/close";
+// @import "../../node_modules/bootstrap/scss/close";
 // @import "../../node_modules/bootstrap/scss/toasts";
-@import "../../node_modules/bootstrap/scss/modal";
-@import "../../node_modules/bootstrap/scss/tooltip";
-@import "../../node_modules/bootstrap/scss/popover";
-@import "../../node_modules/bootstrap/scss/carousel";
-@import "../../node_modules/bootstrap/scss/spinners";
-@import "../../node_modules/bootstrap/scss/offcanvas";
-@import "../../node_modules/bootstrap/scss/placeholders";
+// @import "../../node_modules/bootstrap/scss/modal";
+// @import "../../node_modules/bootstrap/scss/tooltip";
+// @import "../../node_modules/bootstrap/scss/popover";
+// @import "../../node_modules/bootstrap/scss/carousel";
+// @import "../../node_modules/bootstrap/scss/spinners";
+// @import "../../node_modules/bootstrap/scss/offcanvas";
+// @import "../../node_modules/bootstrap/scss/placeholders";
 
 // Helpers
 @import "../../node_modules/bootstrap/scss/helpers";
@@ -197,7 +197,7 @@ p {
 
 .container {
     @include min(1600) {
-        max-width: 1472px;
+        max-width: 1560px;
     }
     @include max(576) {
         --nu-gutter-x: 40px;
@@ -275,13 +275,13 @@ input[type="number"] {
         --#{$prefix}btn-active-bg: transparent;
         --#{$prefix}btn-active-border-color: #{$dark};
     }
-    &-link {
-        --#{$prefix}-btn-padding-x: 0;
-        --#{$prefix}-btn-padding-y: 0;
-        &-dark {
-            --#{$prefix}btn-color: #{$text-color};
-        }
-    }
+    // &-link {
+    //     --#{$prefix}-btn-padding-x: 0;
+    //     --#{$prefix}-btn-padding-y: 0;
+    //     &-dark {
+    //         --#{$prefix}btn-color: #{$text-color};
+    //     }
+    // }
     &.btn-rounded {
         border-radius: 30px;
     }
@@ -326,77 +326,77 @@ ul {
 }
 
 // form control
-.form-floating {
-    .form-control {
-        border: none;
-        border-bottom: 1px solid #d2d2d2;
-        border-radius: 0;
-        padding-left: 0;
-        line-height: 1.5;
-        &:focus {
-            ~ label {
-                transform: translateY(-1rem) translateX(0);
-                color: #636363;
-                font-size: size(14);
-            }
-        }
-        &.textarea {
-            resize: none;
-            height: 100px;
-        }
-    }
-    label {
-        color: #636363;
-        padding-left: 0;
-        will-change: transform, color, font-size;
-        transition:
-            0.3s ease transform,
-            0.3s ease color,
-            0.3s ease font-size;
-        width: 99% !important;
-        display: block !important;
-        &::after {
-            inset: 10px 0 !important;
-            height: 35px !important;
-        }
-    }
-    input,
-    textarea {
-        font-size: size(18);
-        color: $black;
-        line-height: 1.5;
-    }
-}
+// .form-floating {
+//     .form-control {
+//         border: none;
+//         border-bottom: 1px solid #d2d2d2;
+//         border-radius: 0;
+//         padding-left: 0;
+//         line-height: 1.5;
+//         &:focus {
+//             ~ label {
+//                 transform: translateY(-1rem) translateX(0);
+//                 color: #636363;
+//                 font-size: size(14);
+//             }
+//         }
+//         &.textarea {
+//             resize: none;
+//             height: 100px;
+//         }
+//     }
+//     label {
+//         color: #636363;
+//         padding-left: 0;
+//         will-change: transform, color, font-size;
+//         transition:
+//             0.3s ease transform,
+//             0.3s ease color,
+//             0.3s ease font-size;
+//         width: 99% !important;
+//         display: block !important;
+//         &::after {
+//             inset: 10px 0 !important;
+//             height: 35px !important;
+//         }
+//     }
+//     input,
+//     textarea {
+//         font-size: size(18);
+//         color: $black;
+//         line-height: 1.5;
+//     }
+// }
 
-.form-floating > .form-control:focus ~ label,
-.form-floating > .form-control:not(:placeholder-shown) ~ label,
-.form-floating > .form-control-plaintext ~ label,
-.form-floating > .form-select ~ label {
-    transform: translateY(-1rem) translateX(0);
-    color: #636363;
-    font-size: size(14);
-}
+// .form-floating > .form-control:focus ~ label,
+// .form-floating > .form-control:not(:placeholder-shown) ~ label,
+// .form-floating > .form-control-plaintext ~ label,
+// .form-floating > .form-select ~ label {
+//     transform: translateY(-1rem) translateX(0);
+//     color: #636363;
+//     font-size: size(14);
+// }
 
-.form-floating {
-    label {
-        left: -2px;
-    }
-}
+// .form-floating {
+//     label {
+//         left: -2px;
+//     }
+// }
 
-.has-readmore {
-    p {
-        display: inline;
-    }
-    button {
-        @include noTouchDevices {
-            transition: 0.3s ease color;
-            &:hover {
-                color: $secondary-color !important;
-                filter: brightness(95%);
-            }
-        }
-    }
-}
+// .has-readmore {
+//     p {
+//         display: inline;
+//     }
+//     button {
+//         @include noTouchDevices {
+//             transition: 0.3s ease color;
+//             &:hover {
+//                 color: $secondary-color !important;
+//                 filter: brightness(95%);
+//             }
+//         }
+//     }
+// }
 
 .elem-center {
     display: flex;

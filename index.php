@@ -28,7 +28,7 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide position-relative elem-vcenter">
               <figure class="home-banner__slider--image mb-0">
-                <img src="assets/images/home/banner-1.png" alt="banner-image">
+                <img src="assets/images/home/webp/banner-1.webp" alt="banner-image">
               </figure>
               <div class="home-banner__slider--contents position-relative w-100">
                 <div class="container container-inner">
@@ -43,7 +43,7 @@
             </div>
             <div class="swiper-slide position-relative elem-vcenter">
               <figure class="home-banner__slider--image mb-0">
-                <img src="assets/images/home/banner-1.png" alt="banner-image">
+                <img src="assets/images/home/webp/banner-1.webp" alt="banner-image">
               </figure>
               <div class="home-banner__slider--contents position-relative w-100">
                 <div class="container container-inner">
@@ -58,7 +58,7 @@
             </div>
             <div class="swiper-slide position-relative elem-vcenter">
               <figure class="home-banner__slider--image mb-0">
-                <img src="assets/images/home/banner-1.png" alt="banner-image">
+                <img src="assets/images/home/webp/banner-1.webp" alt="banner-image">
               </figure>
               <div class="home-banner__slider--contents position-relative w-100">
                 <div class="container container-inner">
