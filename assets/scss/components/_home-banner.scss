@@ -1,0 +1,103 @@
+.home-banner {
+    &__slider {
+        max-height: 700px;
+        height: calc(100svh - var(--header-height) - 50px);
+        margin-bottom: 22.5px;
+        @include min(992) {
+            margin-bottom: 45px;
+        }
+        @include max(575.98) {
+            max-height: 460px;
+            margin-left: calc(var(--#{$variable-prefix}gutter-x) * -1);
+            margin-right: calc(var(--#{$variable-prefix}gutter-x) * -1);
+        }
+        &::after {
+            content: "";
+            width: 100%;
+            height: 4px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: $z-slider-contents;
+            transform-origin: left;
+            background-color: $primary-color;
+            transform: scaleX(calc(var(--banner-slide-progress) * 100%));
+        }
+        &--image {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: $z-slider-image;
+            @include aspectRatio(1200, 700, cover, absolute);
+            &::before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba(#000, 0.4);
+                z-index: $z-slider-image;
+            }
+        }
+        &--contents {
+            --text-color: #{$white};
+            z-index: $z-slider-contents;
+            padding: 0 var(--#{$variable-prefix}gutter-x);
+            @include min(992) {
+                padding: size(100) size(80);
+            }
+            @include min(1600) {
+                padding: size(100) 0;
+            }
+            .content-title {
+                font-size: size(28);
+                @include lineHeight(28, 38);
+                @include min(576) {
+                    font-size: size(50);
+                    @include lineHeight(50, 60);
+                }
+                @include min(992) {
+                    font-size: size(70);
+                    @include lineHeight(70, 84);
+                }
+                > div {
+                    font-size: size(37);
+                    @include lineHeight(37, 45);
+                    @include min(576) {
+                        font-size: size(60);
+                        @include lineHeight(60, 70);
+                    }
+                    @include min(992) {
+                        font-size: size(80);
+                        @include lineHeight(80, 96);
+                    }
+                }
+            }
+        }
+        &--navigation {
+            z-index: $z-slider-contents;
+            margin-top: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            transform: translateY(50%);
+            .slider-nav {
+                background-color: $primary-color;
+                width: 50px;
+                height: 50px;
+                @include min(992) {
+                    width: 90px;
+                    height: 90px;
+                }
+                @include max(991.98) {
+                    svg,
+                    img {
+                        width: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

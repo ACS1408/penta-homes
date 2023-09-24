@@ -1,0 +1,94 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.footer {
+    background-color: $dark;
+    --text-color: #{$white};
+    &-logo {
+        @include max(575.98) {
+            max-width: 250px;
+        }
+    }
+    &-top {
+        padding-top: size(50);
+        padding-bottom: size(20);
+        @include min(992) {
+            padding-top: size(65);
+        }
+        @include max(991.98) {
+            justify-content: flex-start;
+        }
+    }
+    &-middle {
+        padding-block: size(20);
+        border-block: 1px solid $border-color-dark;
+        .footer-links {
+            gap: 20px 40px;
+            @include min(992) {
+                gap: 20px 50px;
+            }
+            @include max(991.98) {
+                justify-content: flex-start;
+            }
+        }
+    }
+    &-bottom {
+        padding-top: size(35);
+        padding-bottom: size(60);
+        .footer-address {
+            font-size: size(18);
+            font-weight: $font-regular;
+            margin-bottom: size(30);
+            @include lineHeight(18, 30);
+            @include min(992) {
+                margin-bottom: size(40);
+            }
+        }
+        .footer-socials {
+            @include max(991.98) {
+                margin-top: size(30);
+            }
+            .social-icon {
+                width: 30px;
+                height: 30px;
+                background-color: $primary-color;
+                border-radius: 50%;
+                margin-right: size(17);
+            }
+            ul {
+                @include max(992.98) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .social-text {
+                        display: none;
+                    }
+                }
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: size(10);
+                    }
+                }
+            }
+        }
+        .footer-copyrights {
+            margin-bottom: size(22);
+            @include max(991.98) {
+                text-align: center;
+                margin-top: size(20);
+            }
+        }
+        .footer-credits {
+            @include max(991.98) {
+                display: flex;
+                justify-content: center;
+            }
+            .heart-icon {
+                margin-inline: 5px;
+            }
+            a {
+                margin-left: 5px;
+            }
+        }
+    }
+}

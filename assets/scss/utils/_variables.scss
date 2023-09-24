@@ -1,0 +1,224 @@
+$variable-prefix: ph- !default;
+
+// colors
+$primary-color: #f17022 !default;
+$secondary-color: #ffcccc !default;
+$black: #000000 !default;
+$white: #ffffff !default;
+$dark: #232631 !default;
+$dark-grey: #4f515a !default;
+$light-grey: #eceef2 !default;
+$dark-brown: #41362e !default;
+$light-brown: #857b6a !default;
+$text-color: var(--text-color) !default;
+$text-color-alt: var(--text-color-alt) !default;
+$border-color: var(--border-color) !default;
+$border-color-dark: var(--border-color-dark) !default;
+
+// Fonts
+$primary-font: var(--#{$variable-prefix}primary-font-family);
+$secondary-font: var(--#{$variable-prefix}secondary-font-family);
+$font-size-root: 16px !default;
+$base-size: 16;
+
+// Font Weight
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+$font-weights: (
+    "light": $font-light,
+    "regular": $font-regular,
+    "medium": $font-medium,
+    "semibold": $font-semibold,
+    "bold": $font-bold
+);
+
+// breakpoints
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1420px
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px
+);
+
+// bootstrap reset variables
+$primary: $primary-color !default;
+$secondary: $secondary-color !default;
+$headings-font-weight: $font-medium !default;
+
+$btn-padding-y: 15px !default;
+$btn-padding-x: 20px !default;
+$btn-font-size: 16px !default;
+$btn-font-weight: $font-semibold !default;
+$btn-line-height: 1 !default;
+$navbar-padding-y: 0;
+$navbar-brand-padding-y: 0;
+$navbar-light-color: $light-brown;
+$navbar-light-active-color: $primary-color;
+$navbar-nav-link-padding-x: 0;
+$navbar-nav-link-padding-y: 0;
+$nav-link-padding-x: 0;
+$nav-link-padding-y: 0;
+
+$modal-backdrop-bg: #00000099 !default;
+
+$enable-caret: false !default;
+$enable-rounded: true !default;
+$enable-shadows: false !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-reduced-motion: true !default;
+$enable-smooth-scroll: true !default;
+$enable-grid-classes: true !default;
+$enable-container-classes: true !default;
+$enable-cssgrid: false !default;
+$enable-button-pointers: true !default;
+$enable-rfs: true !default;
+$enable-validation-icons: false !default;
+$enable-negative-margins: false !default;
+$enable-deprecation-messages: true !default;
+$enable-important-utilities: true !default;
+
+// spacings
+$spacer: 1rem !default;
+$spacers: (
+    0: 0,
+    1: $spacer * 0.25,
+    2: $spacer * 0.5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3
+) !default;
+
+// headings
+$h-sizes: (
+    1: (
+        null: 90,
+        1600: 110
+    ),
+    2: (
+        null: 50,
+        1600: 80
+    ),
+    3: (
+        null: 24,
+        992: 30,
+        1600: 35
+    ),
+    4: (
+        null: 30
+    ),
+    5: (
+        null: 26
+    ),
+    6: (
+        null: 22
+    )
+);
+
+$ttl-sizes: (
+    180: (
+        null: 83,
+        992: 140,
+        1600: 180
+    ),
+    90: (
+        null: 30,
+        576: 35,
+        768: 45,
+        992: 55,
+        1200: 75,
+        1600: 90
+    ),
+    80: (
+        null: 42,
+        376: 50,
+        1200: 70,
+        1600: 80
+    ),
+    70: (
+        null: 32,
+        375: 37,
+        576: 35,
+        992: 45,
+        1200: 62,
+        1600: 70
+    ),
+    60: (
+        null: 50,
+        1200: 60
+    ),
+    50: (
+        null: 40,
+        992: 50
+    ),
+    36: (
+        null: 24,
+        992: 36
+    ),
+    30: (
+        null: 20,
+        1200: 30
+    )
+);
+
+// paragraphs
+$p-sizes: (
+    14: (
+        null: 14
+    ),
+    15: (
+        null: 15
+    ),
+    16: (
+        null: 16
+    ),
+    18: (
+        null: 16,
+        992: 18
+    ),
+    20: (
+        null: 16,
+        992: 20
+    ),
+    24: (
+        null: 22,
+        992: 24
+    ),
+    26: (
+        null: 18,
+        992: 26
+    ),
+    28: (
+        null: 24,
+        1600: 28
+    ),
+    34: (
+        null: 22,
+        1200: 34
+    ),
+    40: (
+        null: 30,
+        1200: 40
+    )
+);
+
+// stacking context
+$z-backdrop: 1048;
+$z-offcanvas: 1049;
+$z-header: 1050;
+$z-slider-image: 1;
+$z-slider-contents: 2;
