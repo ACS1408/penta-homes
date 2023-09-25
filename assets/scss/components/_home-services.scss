@@ -1,0 +1,65 @@
+.home-services {
+    @include max(991.98) {
+        background-color: $light-grey;
+        .container-inner {
+            --ph-gutter-x: 0;
+        }
+    }
+    .services-bg {
+        padding-top: size(60);
+        padding-bottom: size(60);
+        @include min(576) {
+            padding-top: size(90);
+            padding-bottom: size(90);
+        }
+        @include min(992) {
+            padding-top: size(200);
+            padding-bottom: size(200);
+            background-color: $light-grey;
+        }
+    }
+    &__title {
+        margin-bottom: size(15);
+    }
+    &__description {
+        max-width: 380px;
+        margin-bottom: size(30);
+        @include lineHeight(30, 36);
+        @include min(992) {
+            max-width: 560px;
+            margin-bottom: size(55);
+        }
+    }
+    .row {
+        --#{$variable-prefix}gutter-x: 0;
+        @include min(992) {
+            margin-top: -255px;
+        }
+        @include max(767.98) {
+            --#{$variable-prefix}gutter-y: 24px;
+        }
+    }
+    .service-card {
+        padding: size(40) size(30);
+        background-color: $white;
+        border: 1px solid #a2a2a2;
+        margin-left: -1px;
+        margin-top: -1px;
+        min-height: 255px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .service-icon {
+            width: 70px;
+            margin-bottom: size(80);
+        }
+    }
+    .service-image {
+        margin-top: -1px;
+        margin-left: -1px;
+        min-height: 255px;
+        height: 100%;
+        @include aspectRatio(410, 255, cover);
+    }
+}

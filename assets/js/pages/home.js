@@ -6,13 +6,14 @@ const swiper_config = [
     options: {
       slidesPerView: 1,
       navigation: {
-        prevEl: "home-banner__slider--navigation .nav-prev",
-        nextEl: "home-banner__slider--navigation .nav-next",
+        prevEl: ".home-banner__slider--navigation .nav-prev",
+        nextEl: ".home-banner__slider--navigation .nav-next",
       },
       autoplay: {
         delay: 5000,
         disableOnInteraction: false,
       },
+      loop: true,
       on: {
         autoplayTimeLeft(s, time, progress) {
           homeBannerSlider.style.setProperty(

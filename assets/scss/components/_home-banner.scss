@@ -44,13 +44,7 @@
         &--contents {
             --text-color: #{$white};
             z-index: $z-slider-contents;
-            padding: 0 var(--#{$variable-prefix}gutter-x);
-            @include min(992) {
-                padding: size(100) size(80);
-            }
-            @include min(1600) {
-                padding: size(100) 0;
-            }
+            padding-block: size(100);
             .content-title {
                 font-size: size(28);
                 @include lineHeight(28, 38);

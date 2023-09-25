@@ -137,19 +137,19 @@ html {
     }
 }
 
-@each $level, $size in $ttl-sizes {
-    .ttl-#{$level} {
-        @each $bp, $fs in $size {
-            @if ($bp == null) {
-                font-size: size($fs);
-            } @else {
-                @include min($bp) {
-                    font-size: size($fs);
-                }
-            }
-        }
-    }
-}
+// @each $level, $size in $ttl-sizes {
+//     .ttl-#{$level} {
+//         @each $bp, $fs in $size {
+//             @if ($bp == null) {
+//                 font-size: size($fs);
+//             } @else {
+//                 @include min($bp) {
+//                     font-size: size($fs);
+//                 }
+//             }
+//         }
+//     }
+// }
 
 // paragraphs
 p {
@@ -209,21 +209,19 @@ p {
     box-shadow: none;
 }
 
-@include min(1200) {
-    ::-webkit-scrollbar {
-        width: 5px;
-        height: 5px;
-    }
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
 
-    ::-webkit-scrollbar-thumb {
-        border-radius: 0px;
-        background: #ccc;
-    }
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background: #ccc;
+}
 
-    ::-webkit-scrollbar-track {
-        background-color: #ebebeb;
-        border-radius: 0px;
-    }
+::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    border-radius: 0px;
 }
 
 img {
@@ -414,4 +412,13 @@ ul {
 
 .container-inner {
     max-width: 1230px;
+    @include min(576) {
+        padding-inline: var(--#{$variable-prefix}gutter-x);
+    }
+    @include min(992) {
+        padding-inline: size(80);
+    }
+    @include min(1600) {
+        padding-inline: 0;
+    }
 }

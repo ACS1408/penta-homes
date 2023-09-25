@@ -83,6 +83,108 @@
         </div>
       </div>
     </section>
+
+    <!-- Home Projects -->
+    <section class="home-projects">
+      <div class="container">
+        <h2 class="home-projects__title text-primary">OUR PROJECTS</h2>
+        <p class="home-projects__description text-dark fs-30">We deliver projects that evoke emotions and a sense of belonging.</p>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6">
+            <div class="project-card">
+              <figure class="project-card__image mb-0">
+                <img src="assets/images/home/webp/project-1.webp" alt="project-1">
+              </figure>
+              <div class="project-card__status bg-dark text-white fw-semibold">
+                UP COMING
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="project-card">
+              <figure class="project-card__image mb-0">
+                <img src="assets/images/home/webp/project-2.webp" alt="project-2">
+              </figure>
+              <div class="project-card__status bg-grey text-white fw-semibold">
+                UP COMING
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="project-card">
+              <figure class="project-card__image mb-0">
+                <img src="assets/images/home/webp/project-3.webp" alt="project-3">
+              </figure>
+              <div class="project-card__status bg-primary text-white fw-semibold">
+                COMPLETED
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Home Services -->
+    <section class="home-services">
+      <div class="container">
+        <div class="services-bg">
+          <div class="container-sm container-inner">
+            <h2 class="home-services__title text-primary">OUR SERVICES</h2>
+            <p class="home-services__description text-dark fs-30">We provide the best services for our customers.</p>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 d-lg-block d-none"></div>
+              <div class="col-lg-4 col-md-6 d-lg-block d-none"></div>
+              <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                  <figure class="service-icon">
+                    <img src="assets/icons/service-1.svg" alt="service-icon">
+                  </figure>
+                  <div class="service-name">INTERIOR, LANDSCAPE, DESIGNING</div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                  <figure class="service-icon">
+                    <img src="assets/icons/service-2.svg" alt="service-icon">
+                  </figure>
+                  <div class="service-name">CONSULTATION</div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                  <figure class="service-icon">
+                    <img src="assets/icons/service-3.svg" alt="service-icon">
+                  </figure>
+                  <div class="service-name">SALES</div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                  <figure class="service-icon">
+                    <img src="assets/icons/service-4.svg" alt="service-icon">
+                  </figure>
+                  <div class="service-name">RESALES</div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 d-lg-block d-none"></div>
+              <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                  <figure class="service-icon">
+                    <img src="assets/icons/service-5.svg" alt="service-icon">
+                  </figure>
+                  <div class="service-name">RENTALS</div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <figure class="service-image">
+                  <img src="assets/images/home/webp/service-image.webp" alt="service-image">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <?php include('components/footer.php'); ?>
   <script src="assets/js/pages/home.js"></script>
