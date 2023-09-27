@@ -13,6 +13,7 @@ const swiper_config = [
         delay: 5000,
         disableOnInteraction: false,
       },
+      speed: 1500,
       loop: true,
       on: {
         autoplayTimeLeft(s, time, progress) {
@@ -30,3 +31,5 @@ var homeSliders = [];
 swiper_config?.forEach((config, i) => {
   homeSliders[i] = new Swiper(config?.el, config?.options);
 });
+
+$("#contact-select").select2();

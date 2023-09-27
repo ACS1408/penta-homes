@@ -96,7 +96,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="footer-copyrights text-color">
-                        Copyright© 2023. Penta Homes. All Rights Reserved.
+                        Copyright © <?php echo date("Y"); ?> . Penta Homes. All Rights Reserved.
                     </div>
                     <div class="footer-credits text-color elem-vcenter">
                         Made with <img src="assets/icons/icon-heart.svg" class="heart-icon"> by <a href="https://creativeleaves.com/" target="_blank" rel="noopener noreferrer" class="no-decoration text-primary">CreativeLeaves.com</a>
@@ -105,7 +105,9 @@
             </div>
         </div>
     </div>
+    <script src="assets/js/vendors/jquery.min.js"></script>
     <script src="assets/js/vendors/bootstrap-bundle.min.js"></script>
     <script src="assets/js/vendors/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script src="assets/js/vendors/select2.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </footer>
