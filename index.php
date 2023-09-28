@@ -31,7 +31,7 @@
     <main class="home-page">
       <!-- Home Banner -->
       <section class="home-banner">
-        <div class="container position-relative">
+        <div class="container-lg position-relative">
           <div class="home-banner__slider swiper position-relative">
             <div class="swiper-wrapper">
               <div class="swiper-slide position-relative elem-vcenter">
@@ -44,7 +44,7 @@
                 <div
                   class="home-banner__slider--contents position-relative w-100"
                 >
-                  <div class="container container-inner">
+                  <div class="container container-inner-lg">
                     <div class="content-title fw-semibold text-color">
                       <div class="fw-bold">BUILDING HOMES</div>
                       For a promising life...
@@ -62,7 +62,7 @@
                 <div
                   class="home-banner__slider--contents position-relative w-100"
                 >
-                  <div class="container container-inner">
+                  <div class="container container-inner-lg">
                     <div class="content-title fw-semibold text-color">
                       <div class="fw-bold">BUILDING HOMES</div>
                       For a promising life...
@@ -80,7 +80,7 @@
                 <div
                   class="home-banner__slider--contents position-relative w-100"
                 >
-                  <div class="container container-inner">
+                  <div class="container container-inner-lg">
                     <div class="content-title fw-semibold text-color">
                       <div class="fw-bold">BUILDING HOMES</div>
                       For a promising life...
@@ -99,6 +99,67 @@
             <button class="default slider-nav nav-next elem-center">
               <img src="assets/icons/arrow-right.svg" alt="arrow-right" />
             </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Home About -->
+      <section class="home-about">
+        <div class="container">
+          <div class="home-about__box--outer">
+            <div class="home-about__box">
+              <div class="home-about__bg--boxes">
+                <div class="bg-box"><div class="box-inner"></div></div>
+                <div class="bg-box"><div class="box-inner"></div></div>
+                <div class="bg-box"><div class="box-inner"></div></div>
+              </div>
+              <div class="home-about__contents">
+                <h2 class="home-about__title text-color">About</h2>
+                <h3 class="home-about__subtitles text-primary">PENTA HOMES</h3>
+                <p class="home-about__description text-color">
+                  Honesty, Integrity, an unwavering commitment to quality, and
+                  an uncompromising dedication to provide the best possible
+                  value to its customers, Penta Homes is poised to make a splash
+                  in Thrissur,Kerala residential real estate market. Its success
+                  in residential projects especially group villa projects, has
+                  positioned Penta Homes as a leader in residential real estate
+                  development.
+                </p>
+                <a href="#" class="btn btn-primary">LEARN MORE</a>
+              </div>
+            </div>
+            <div class="home-about__images">
+              <div class="row">
+                <div class="col">
+                  <figure class="about-image">
+                    <img
+                      src="assets/images/home/about-1.png"
+                      alt="about-image"
+                    />
+                  </figure>
+                  <figure class="about-image">
+                    <img
+                      src="assets/images/home/about-3.png"
+                      alt="about-image"
+                    />
+                  </figure>
+                </div>
+                <div class="col">
+                  <figure class="about-image">
+                    <img
+                      src="assets/images/home/about-2.png"
+                      alt="about-image"
+                    />
+                  </figure>
+                  <figure class="about-image">
+                    <img
+                      src="assets/images/home/about-4.png"
+                      alt="about-image"
+                    />
+                  </figure>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -277,12 +338,14 @@
                     <label for="ct-first-name" class="form-label"
                       >First Name</label
                     >
+                    <span class="form-error">Invalid field</span>
                   </div>
                   <div class="form-group">
                     <input type="text" id="ct-last-name" class="form-control" />
                     <label for="ct-last-name" class="form-label"
                       >Last Name</label
                     >
+                    <span class="form-error">Invalid field</span>
                   </div>
                   <div class="form-group">
                     <input
@@ -293,20 +356,26 @@
                     <label for="ct-phone-number" class="form-label"
                       >Phone Number</label
                     >
+                    <span class="form-error">Invalid field</span>
                   </div>
                   <div class="form-group">
                     <input type="text" id="ct-email" class="form-control" />
                     <label for="ct-email" class="form-label"
                       >Email Address</label
                     >
+                    <span class="form-error">Invalid field</span>
                   </div>
-                  <select
-                    id="contact-select"
-                    data-placeholder="Preffered Contact Type"
-                  >
-                    <option value="T1">Type 1</option>
-                    <option value="T2">Type 2</option>
-                  </select>
+                  <div class="form-group">
+                    <select
+                      id="contact-select"
+                      data-placeholder="Preffered Contact Type"
+                    >
+                      <option>Preffered Contact Type</option>
+                      <option value="CT1">Contact Type 1</option>
+                      <option value="CT2">Contact Type 2</option>
+                    </select>
+                    <span class="form-error">Invalid field</span>
+                  </div>
                   <div class="form-group textarea">
                     <textarea id="ct-message" class="form-control"></textarea>
                     <label for="ct-message" class="form-label">Message</label>
@@ -317,6 +386,9 @@
                       value="SUBMIT"
                       class="btn btn-dark btn-rounded justify-content-center"
                     />
+                    <span class="success-message"
+                      >Your response is successfully submitted</span
+                    >
                   </div>
                 </form>
               </div>

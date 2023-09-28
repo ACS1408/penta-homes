@@ -49,10 +49,7 @@
 // Aspect Ratio
 @mixin aspectRatio($w, $h, $fit: contain, $pos: relative) {
     position: $pos;
-    img,
-    picture,
-    video,
-    iframe {
+    > * {
         position: absolute;
         top: 0;
         left: 0;

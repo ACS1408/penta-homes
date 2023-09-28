@@ -1,9 +1,7 @@
 .home-contact {
     padding-top: size(80);
+    padding-bottom: size(80);
     position: relative;
-    @include min(992) {
-        height: 850px;
-    }
     @include min(1200) {
         padding-top: size(140);
     }
@@ -13,6 +11,7 @@
     }
     @include max(991.98) {
         overflow: hidden;
+        padding-bottom: 0;
     }
     &__image {
         position: absolute;
@@ -75,10 +74,10 @@
         background-color: $primary-color;
         padding: size(35);
         max-width: 506px;
-        margin-left: -12px;
-        margin-right: -12px;
         @include min(992) {
             padding: size(55);
+            margin-left: -12px;
+            margin-right: -12px;
         }
         @include min(1200) {
             transform: translateX(-25%);
@@ -110,7 +109,17 @@
             }
         }
         .submit-wrap {
-            margin-top: size(35);
+            margin-top: size(50);
+            .success-message {
+                color: $white;
+                font-size: size(14);
+                font-weight: $font-regular;
+                display: inline-block;
+                margin-top: size(15);
+                background-color: rgb(24, 191, 38);
+                padding: 4px 12px;
+                border-radius: 24px;
+            }
         }
     }
 }

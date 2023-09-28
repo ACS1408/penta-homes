@@ -6,10 +6,12 @@
         @include min(992) {
             margin-bottom: 45px;
         }
-        @include max(575.98) {
-            max-height: 460px;
+        @include max(991.98) {
             margin-left: calc(var(--#{$variable-prefix}gutter-x) * -0.5);
             margin-right: calc(var(--#{$variable-prefix}gutter-x) * -0.5);
+        }
+        @include max(575.98) {
+            max-height: 460px;
         }
         &::after {
             content: "";

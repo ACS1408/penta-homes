@@ -1,0 +1,147 @@
+.home-about {
+    padding-top: size(175);
+    padding-bottom: size(200);
+    @include max(991.98) {
+        background-color: $dark-brown;
+        padding-top: size(80);
+        padding-bottom: size(80);
+        margin-top: -25px;
+        overflow: hidden;
+    }
+    &__box {
+        --text-color: #{$white};
+        @include min(992) {
+            background-color: $dark-brown;
+            position: relative;
+            overflow: hidden;
+            padding: size(100) size(80);
+            margin-block: 60px;
+            @include max(1419.98) {
+                padding: size(60);
+            }
+        }
+        &--outer {
+            position: relative;
+        }
+    }
+    &__contents {
+        z-index: $z-stack-contents;
+        position: relative;
+        @include max(991.98) {
+            margin-bottom: 40px;
+        }
+    }
+    &__title {
+        margin-bottom: size(5);
+        font-size: size(30);
+        @include lineHeight(30, 36);
+    }
+    &__subtitle {
+        margin-bottom: size(15);
+        font-size: size(50);
+        @include lineHeight(50, 60);
+    }
+    &__description {
+        font-size: size(20);
+        @include lineHeight(20, 24);
+        font-weight: $font-regular;
+        max-width: 480px;
+        @include max(1419.98) {
+            max-width: 400px;
+        }
+    }
+    &__bg--boxes {
+        display: flex;
+        flex-wrap: wrap;
+        width: 800px;
+        gap: 30px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(15%, -35%) rotate(45deg);
+        @include max(1419.98) {
+            transform: translate(30%, -35%) rotate(45deg) scale(0.8);
+        }
+        @include max(991.98) {
+            top: unset;
+            bottom: 0;
+            transform: translate(55%, 50%) rotate(45deg) scale(0.8);
+        }
+        .bg-box {
+            flex: 0 0 50%;
+            max-width: 380px;
+            width: 100%;
+            background-color: $light-brown;
+            @include aspectRatio(380, 380);
+        }
+    }
+    &__images {
+        z-index: $z-stack-contents;
+        position: relative;
+        @include min(992) {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+        .about-image {
+            margin-bottom: 0;
+        }
+        .col {
+            &:first-child {
+                .about-image {
+                    &:first-child {
+                        width: 340px;
+                        margin-bottom: size(30);
+                        @include aspectRatio(340, 360, cover);
+                        @include min-max(992, 1419.98) {
+                            width: 21vw;
+                        }
+                        @include max(991.98) {
+                            width: 100%;
+                        }
+                    }
+                    &:last-child {
+                        width: 293px;
+                        margin-left: auto;
+                        @include aspectRatio(293, 270, cover);
+                        @include min-max(992, 1419.98) {
+                            width: 17vw;
+                        }
+                        @include max(991.98) {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            &:last-child {
+                .about-image {
+                    &:first-child {
+                        width: 230px;
+                        margin-bottom: size(30);
+                        @include aspectRatio(230, 208, cover);
+                        @include min-max(992, 1419.98) {
+                            width: 15vw;
+                        }
+                        @include max(991.98) {
+                            width: 100%;
+                        }
+                    }
+                    &:last-child {
+                        width: 230px;
+                        @include aspectRatio(230, 415, cover);
+                        @include min-max(992, 1419.98) {
+                            width: 15vw;
+                        }
+                        @include max(991.98) {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .btn {
+        margin-top: size(25);
+    }
+}
