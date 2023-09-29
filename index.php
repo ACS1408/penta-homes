@@ -16,13 +16,13 @@
     />
 
     <!-- Select 2 -->
-    <link href="assets/css/vendors/select2.min.css" rel="stylesheet" />
+    <link href="assets/dist/css/vendors/select2.min.css" rel="stylesheet" />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/main.min.css" />
-    <link rel="stylesheet" href="assets/css/header.css" />
-    <link rel="stylesheet" href="assets/css/home.css" />
-    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/dist/css/main.min.css" />
+    <link rel="stylesheet" href="assets/dist/css/header.min.css" />
+    <link rel="stylesheet" href="assets/dist/css/home.min.css" />
+    <link rel="stylesheet" href="assets/dist/css/footer.min.css" />
     <title>Penta Home | Home</title>
   </head>
 
@@ -133,13 +133,13 @@
                 <div class="col">
                   <figure class="about-image">
                     <img
-                      src="assets/images/home/about-1.png"
+                      src="assets/images/home/webp/about-1.webp"
                       alt="about-image"
                     />
                   </figure>
                   <figure class="about-image">
                     <img
-                      src="assets/images/home/about-3.png"
+                      src="assets/images/home/webp/about-3.webp"
                       alt="about-image"
                     />
                   </figure>
@@ -147,13 +147,13 @@
                 <div class="col">
                   <figure class="about-image">
                     <img
-                      src="assets/images/home/about-2.png"
+                      src="assets/images/home/webp/about-2.webp"
                       alt="about-image"
                     />
                   </figure>
                   <figure class="about-image">
                     <img
-                      src="assets/images/home/about-4.png"
+                      src="assets/images/home/webp/about-4.webp"
                       alt="about-image"
                     />
                   </figure>
@@ -398,6 +398,6 @@
       </section>
     </main>
     <?php include('components/footer.php'); ?>
-    <script src="assets/js/pages/home.js"></script>
+    <script src="assets/dist/js/home.min.js"></script>
   </body>
 </html>

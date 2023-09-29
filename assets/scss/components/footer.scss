@@ -30,6 +30,16 @@
             @include max(991.98) {
                 justify-content: flex-start;
             }
+            li {
+                a {
+                    @include noTouchDevices {
+                        transition: 0.3s ease color;
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
         }
     }
     &-bottom {
@@ -42,6 +52,16 @@
             @include lineHeight(18, 30);
             @include min(992) {
                 margin-bottom: size(40);
+            }
+        }
+        .footer-contacts {
+            a {
+                @include noTouchDevices {
+                    transition: 0.3s ease color;
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
             }
         }
         .footer-socials {
@@ -68,6 +88,14 @@
                     &:not(:last-child) {
                         margin-bottom: size(10);
                     }
+                    a {
+                        @include noTouchDevices {
+                            transition: 0.3s ease color;
+                            &:hover {
+                                color: $primary-color;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -88,6 +116,12 @@
             }
             a {
                 margin-left: 5px;
+                @include noTouchDevices {
+                    &:hover {
+                        text-decoration: underline;
+                        text-underline-offset: 2px;
+                    }
+                }
             }
         }
     }

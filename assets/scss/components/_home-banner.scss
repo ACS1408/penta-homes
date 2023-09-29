@@ -93,6 +93,19 @@
                         width: 25px;
                     }
                 }
+                @include noTouchDevices {
+                    svg,
+                    img {
+                        will-change: transform;
+                        transition: 0.3s ease transform;
+                    }
+                    &:hover {
+                        svg,
+                        img {
+                            transform: scaleX(1.1);
+                        }
+                    }
+                }
             }
         }
     }

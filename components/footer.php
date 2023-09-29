@@ -105,9 +105,9 @@
             </div>
         </div>
     </div>
-    <script src="assets/js/vendors/jquery.min.js"></script>
-    <script src="assets/js/vendors/bootstrap-bundle.min.js"></script>
-    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
-    <script src="assets/js/vendors/select2.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/dist/js/vendors/jquery.min.js"></script>
+    <script src="assets/dist/js/vendors/bootstrap-bundle.min.js"></script>
+    <script src="assets/dist/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/dist/js/vendors/select2.min.js"></script>
+    <script src="assets/dist/js/main.min.js"></script>
 </footer>
